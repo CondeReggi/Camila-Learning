@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.contendor{
+    width: 390px; /* Medida justa en base a los hijos y sus tamaños */
+    display: flex;
+    flex-wrap: wrap; /* Agrega elementos en fila hasta que el contenedor padre se llene, y entonces genera una nueva fila */
+}
+
+.cuadadoconlorem{ /* Tener en cuenta que cada contenedor de estos tiene 100 + 2*15 px de ancho */
+    width: 100px;  
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.385);
+    margin: 15px;
+}
+
+.cuadrado{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+}
+
+.cuadadoconlorem > p {
+    padding: 2px;
+}
