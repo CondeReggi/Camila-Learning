@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(to top, rgba(161, 140, 209, 0.493) 0%, rgba(251, 194, 235, 0.472) 100%);
+}
+
+.contenedor {
+    width: 80%;
+    max-width: 1550px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+
+header {
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(161, 140, 209, 0.486) 0%, rgba(251, 194, 235, 0.451) 100%), url(../img/wallpapertip_hd-wallpaper-for-mobile_66500\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+:root {
+    scroll-behavior: smooth;
+}
+
+.head {
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.menu {
+    position: fixed;
+    z-index: 99;
+    top: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgb(227, 207, 233);
+}
+
+.menu-navegacion {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    background-image: linear-gradient(to top, #a7a6cb 0%, #8989ba 52%, #8989ba 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: transform .3s ease-in-out;
+    transform: translate(0%);
+    box-shadow: 0 0 6 black;
+    z-index: 9;
+}
+
+.responsive{
+    transform: translate(110%);
+}
+
+.spread {
+    transform: translate(0);
+}
+
+.menu-navegacion a {
+    color: white;
+    text-decoration: none;
+}
+
+.titulo {
+    font-size: 60px;
+    margin-bottom: 15px;
+    letter-spacing: 25px;
+}
+
+.copy {
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.n-isometricos {
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: 300;
+    color: #8989ba;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.subtitulo {
+    text-align: center;
+    font-weight: 300;
+    color: #8989ba;
+    margin-bottom: 40px;
+    font-size: 60px;
+    margin-top: 100px;
+}
+
+.contenedor-isometricos {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.yunke {
+    height: 400x;
+    width: 400px;
+}
+
+.contenedor-galeria {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 150px;
+    filter: brightness(100%);
+    transition: 3s;
+}
+
+.contenedor-galeria > img:hover{
+    filter: brightness(80%);
+    transform: rotate(1deg);
+}
+
+.img-galeria {
+    justify-content: space-evenly;
+    width: 40%;
+    display: block;
+    border: 2px white solid;
+    margin-bottom: 90px;
+    border-radius: 10px;
+    cursor: pointer;
+}
